@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hack Frenzy</title>
+</head>
+<body>
+<div>
+    <p>Welcome, {{request.user}}</p>
+</div>
+<form method="post">
+    {% csrf_token %}
+    {{f.as_p}}
+    <input type="submit" name="Register">
+</form>
+<div>
+    {% for message in messages %}
+        <p id="messages">{{message}}</p>
+    {% endfor %}
+</div>
+<div>
+    <a href="logout">Logout</a>
+</div>
+</body>
+</html>

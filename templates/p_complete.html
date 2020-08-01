@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Password_Reset_Complete</title>
+</head>
+<body>
+<form method="post">
+    {% csrf_token %}
+    {{form}}
+    <button><a href="login">Login</a> </button>
+</form>
+</body>
+</html>

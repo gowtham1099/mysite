@@ -7,7 +7,7 @@ Cython==0.29.21
 defusedxml==0.6.0
 Django==3.0.8
 django-allauth==0.42.0
-djangorestframework==3.11.0
+djangorestframework==3.11.2
 docutils==0.16
 et-xmlfile==1.0.1
 gunicorn==20.0.4
